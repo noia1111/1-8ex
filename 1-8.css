@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-main {
+main{
+  
   width: 960px;
   margin:50px auto;
+}
+.p-list {
+  margin:50px auto -40px;
   
 }
 .L {
@@ -16,9 +20,11 @@ main {
   background-color: #eee;
 }
 .p-list {
+  display: flex;
   flex-wrap: wrap;
   width: 960px;
   height: 720px;
+  margin-bottom: 50px;
   
   
 }
@@ -29,8 +35,11 @@ main {
   margin-right: 5%;
   margin-bottom: 40px;
 }
-.box:first-child,
-.box:nth-child(5),
-.box:last-child {
+.p:first-child,
+.p:nth-child(5),
+.p:last-child {
   background-color: #ff8c00;
+}
+.p:nth-child(3n) {
+  margin-right: 0;
 }
